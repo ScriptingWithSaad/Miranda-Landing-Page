@@ -13,16 +13,47 @@
   let introPlayed = false;
   let refreshTimer;
   let navigationUntil = 0;
-  if (motion) gsap.registerPlugin(ScrollTrigger);
+  let scrollUntil = 0;
+  let layoutWidth = innerWidth;
+  let layoutHeight = innerHeight;
+  const nativeScroll = matchMedia(
+    "(max-width: 1100px), (hover: none), (pointer: coarse)",
+  );
+  if (motion) {
+    gsap.registerPlugin(ScrollTrigger);
+    // Mobile browser chrome changes height during a swipe, not the page layout.
+    // Handle real resizes below and avoid a second automatic refresh mid-scroll.
+    ScrollTrigger.config({
+      ignoreMobileResize: true,
+      autoRefreshEvents: "DOMContentLoaded,load",
+    });
+  }
   function refresh() {
     clearTimeout(refreshTimer);
     refreshTimer = setTimeout(() => {
-      if (performance.now() < navigationUntil) return refresh();
+      if (performance.now() < Math.max(navigationUntil, scrollUntil))
+        return refresh();
       lenis?.resize();
       if (motion) ScrollTrigger.refresh();
-    }, 160);
+    }, 200);
+  }
+  function layoutResize() {
+    const width = innerWidth;
+    const height = innerHeight;
+    const widthChanged = width !== layoutWidth;
+    const heightChanged = Math.abs(height - layoutHeight);
+    if (
+      !widthChanged &&
+      (heightChanged === 0 ||
+        (nativeScroll.matches && heightChanged < layoutHeight * 0.25))
+    )
+      return;
+    layoutWidth = width;
+    layoutHeight = height;
+    refresh();
   }
   function closeMenu(focus = false) {
+    if (!document.body.classList.contains("menu-active")) return;
     document.body.classList.remove("menu-active");
     toggle.setAttribute("aria-expanded", "false");
     toggle.setAttribute("aria-label", "Open navigation");
@@ -304,76 +335,91 @@
         };
       },
     );
-    media.add("(prefers-reduced-motion: no-preference)", () => {
-      if (!introPlayed) {
-        introPlayed = true;
-        if (scrollY < 80 && (!location.hash || location.hash === "#home")) {
-          const desktop = matchMedia(
-            "(min-width: 1101px) and (hover: hover) and (pointer: fine)",
-          ).matches;
-          gsap.fromTo(
-            ".page-1",
-            {
-              y: desktop ? 120 : 24,
-              scale: desktop ? 0.8 : 0.99,
-              rotation: desktop ? -360 : -2,
-              opacity: 0.15,
-            },
-            {
-              y: 0,
-              scale: 1,
-              rotation: 0,
-              opacity: 1,
-              duration: desktop ? 1.35 : 0.7,
-              ease: "power3.out",
-              clearProps: "transform,opacity",
-            },
-          );
-        }
-      }
-      gsap.fromTo(
-        ".page-3 img",
-        { rotation: -6 },
-        {
-          rotation: 6,
-          ease: "none",
-          scrollTrigger: {
-            trigger: ".page-3",
-            start: "top bottom",
-            end: "bottom top",
-            scrub: true,
-            invalidateOnRefresh: true,
-          },
-        },
-      );
-      ScrollTrigger.batch(
-        ".left-page-2, .page-4-elems-right, .page-6-elem-right-bottom",
-        {
-          start: "top 92%",
-          once: true,
-          onEnter: (batch) =>
+    media.add(
+      {
+        animate: "(prefers-reduced-motion: no-preference)",
+        desktop: "(min-width: 1101px) and (hover: hover) and (pointer: fine)",
+      },
+      (context) => {
+        const { animate, desktop } = context.conditions;
+        if (!animate) return;
+        if (!introPlayed) {
+          introPlayed = true;
+          if (scrollY < 80 && (!location.hash || location.hash === "#home")) {
             gsap.fromTo(
-              batch,
-              { y: 20, opacity: 0.4 },
+              ".page-1",
+              {
+                y: desktop ? 120 : 24,
+                scale: desktop ? 0.8 : 0.99,
+                rotation: desktop ? -360 : -2,
+                opacity: 0.15,
+              },
               {
                 y: 0,
+                scale: 1,
+                rotation: 0,
                 opacity: 1,
-                duration: 0.65,
-                stagger: 0.08,
+                duration: desktop ? 1.35 : 0.7,
                 ease: "power3.out",
                 clearProps: "transform,opacity",
               },
-            ),
-        },
-      );
-      refresh();
-    });
+            );
+          }
+        }
+        gsap.fromTo(
+          ".page-3 img",
+          { rotation: -6 },
+          {
+            rotation: 6,
+            ease: "none",
+            scrollTrigger: {
+              trigger: ".page-3",
+              start: "top bottom",
+              end: "bottom top",
+              scrub: true,
+              invalidateOnRefresh: true,
+            },
+          },
+        );
+        ScrollTrigger.batch(
+          desktop
+            ? ".left-page-2, .page-4-elems-right, .page-6-elem-right-bottom"
+            : ".left-page-2 > h2, .left-page-2 > p, .page-4-elems-right > h2, .page-4-elems-right > p, .page-6-elem-right-bottom",
+          {
+            start: "top 92%",
+            once: true,
+            onEnter: (batch) =>
+              gsap.fromTo(
+                batch,
+                { y: 20, opacity: 0.4 },
+                {
+                  y: 0,
+                  opacity: 1,
+                  duration: 0.65,
+                  stagger: 0.08,
+                  ease: "power3.out",
+                  clearProps: "transform,opacity",
+                },
+              ),
+          },
+        );
+        refresh();
+      },
+    );
   }
   document.fonts?.ready.then(refresh);
-  document.querySelectorAll("img").forEach((image) => {
-    if (!image.complete)
-      image.addEventListener("load", refresh, { once: true });
-  });
-  addEventListener("resize", refresh, { passive: true });
+  // Every image reserves its dimensions in HTML/CSS; decoding lazy artwork
+  // does not change layout and must not remeasure all scroll animations.
+  addEventListener(
+    "scroll",
+    () => {
+      scrollUntil = performance.now() + 200;
+    },
+    { passive: true },
+  );
+  addEventListener("resize", layoutResize, { passive: true });
   addEventListener("pageshow", refresh);
+  document.addEventListener("visibilitychange", () => {
+    if (!document.hidden) layoutResize();
+  });
 })();

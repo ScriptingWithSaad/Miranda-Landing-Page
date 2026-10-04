@@ -8,6 +8,7 @@ A responsive HTML, CSS and JavaScript recreation of Niccolò Miranda's newspaper
 
 - Fluid layouts for phones, tablets and desktop screens, with readable type and no horizontal page scrolling.
 - GSAP opening animation, scroll-linked stamp rotation and subtle section reveals. Desktop wheel scrolling uses Lenis; touch devices keep native scrolling.
+- Mobile address-bar height changes and lazy image decoding do not remeasure scroll animations during swipes. Real layout changes refresh after scrolling settles; phone reveals animate smaller text blocks instead of whole tall image columns.
 - Stable, keyboard-accessible navigation and artwork previews that fit the visible viewport, including landscape phones.
 - Seamless moving contact strip with pause/play controls. Reduced-motion preferences disable nonessential animation.
 - Local WebP artwork with responsive sizes, intrinsic dimensions and lazy loading below the fold. Fonts and animation libraries are served locally.
