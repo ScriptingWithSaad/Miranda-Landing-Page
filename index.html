@@ -1,340 +1,575 @@
-<!DOCTYPE html>
+<!doctype html>
+
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Miranda --- Paper portfolio</title>
-
-    <!-- remix icon cdn -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
-
-
-    <!-- locomotive cdn -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
-
-
-    <!-- link css file -->
-    <link rel="stylesheet" href="stylesheet/style.css">
-
-
-</head>
-
-<body>
-
-    <div id="main">
-        <div class="page-1">
-
-            <div class="nav">
-                <h5>Amsterdam, NL</h5>
-                <a href="#">
-                    <img src="https://uploads-ssl.webflow.com/5f2429f172d117fcee10e819/5f7f87c8b81a6e7a214312f0_header.svg"
-                        alt="Logo">
-                </a>
-
-                <i class="ri-menu-line"></i>
-            </div>
-
-            <div class="page-1-elems">
-                <div class="page-1-elem-1 zoom-img-effect">
-                    <a href="#">
-                        <div class="page-1-elem-1-img ">
-                            <img src="https://uploads-ssl.webflow.com/5f9085a4041dd5427c5ac8ae/615d9672cc65f12c9ab25f21_thumbnail-small.jpeg?"
-                                alt="Avro ko Image">
-                        </div>
-                        <h2>AVRO | KO <span>New</span></h2>
-                        <p>AvroKO is an award-winning global design firm, established
-                            itself as a global leader in interior architecture for hospitality,
-                            restaurant and bars.</p>
-                    </a>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+      name="viewport"
+    />
+    <title>Miranda — Paper Portfolio | ScriptingWithSaad Recreation</title>
+    <link href="assets/site/style.d322ab5e6d0f.css" rel="stylesheet" />
+    <meta
+      content="A responsive newspaper-style portfolio recreation, with editorial typography, interactive artwork and smooth motion."
+      name="description"
+    />
+    <meta content="#c3bbb2" name="theme-color" />
+    <link
+      as="font"
+      crossorigin=""
+      href="assets/fonts/Canopee.ttf"
+      rel="preload"
+      type="font/ttf"
+    />
+    <link href="assets/vendor/lenis-1.3.26.css" rel="stylesheet" />
+    <script defer="" src="assets/vendor/gsap-3.12.5.min.js"></script>
+    <script defer="" src="assets/vendor/ScrollTrigger-3.12.5.min.js"></script>
+    <script defer="" src="assets/vendor/lenis-1.3.26.min.js"></script>
+    <script defer="" src="assets/site/app.5c05229f9966.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="nav">
+      <h5>Amsterdam, NL</h5>
+      <a aria-label="Miranda home" class="brand" href="#home">
+        <img
+          alt="The Paper Portfolio"
+          decoding="async"
+          height="32"
+          src="assets/images/header.svg"
+          width="170"
+        />
+      </a>
+      <button
+        aria-controls="site-menu"
+        aria-expanded="false"
+        aria-label="Open navigation"
+        class="menu-toggle"
+        type="button"
+      >
+        <svg aria-hidden="true" viewbox="0 0 24 24">
+          <path class="menu-line" d="M4 8h16"></path>
+          <path class="menu-line" d="M4 16h16"></path>
+        </svg>
+      </button>
+    </header>
+    <nav
+      aria-label="Site navigation"
+      class="site-menu"
+      data-lenis-prevent=""
+      id="site-menu"
+      inert=""
+    >
+      <div class="menu-links">
+        <a href="#selected-work">Selected Work</a><a href="#about">About</a
+        ><a href="#approach">Approach</a><a href="#recognition">Recognition</a
+        ><a href="#contact">Contact</a><a href="#home">Back to Top</a>
+      </div>
+    </nav>
+    <main id="main">
+      <div class="paper-entrance">
+        <div class="page-1" id="home">
+          <div class="page-1-elems">
+            <div class="page-1-elem-1 zoom-img-effect">
+              <a
+                aria-label="Preview AVRO | KO"
+                data-project=""
+                href="#selected-work"
+              >
+                <div class="project-image page-1-elem-1-img">
+                  <img
+                    alt="AvroKO interior design project"
+                    decoding="async"
+                    fetchpriority="high"
+                    height="406"
+                    loading="eager"
+                    sizes="(max-width: 560px) calc((100vw - 50px) / 2), (max-width: 800px) 45vw, 33vw"
+                    src="assets/images/avroko-640.webp"
+                    srcset="
+                      assets/images/avroko-320.webp 320w,
+                      assets/images/avroko-640.webp 640w,
+                      assets/images/avroko-960.webp 960w
+                    "
+                    width="1055"
+                  />
                 </div>
-
-                <div class="page-1-elem-2">
-                    <h2>All Work!</h2>
-                    <p>A Featured in the selction work - of the last years.</p>
-
-                    <p><span>Tip!</span> Drag sideways to navigate</p>
-                </div>
-
-                <div class="page-1-elem-3 zoom-img-effect">
-                    <a href="#">
-
-                        <div class="page-1-elem-3-img">
-                            <img src="https://uploads-ssl.webflow.com/5f9085a4041dd5427c5ac8ae/645b5439577bd35377de8c43_thumbnail-small.webp?"
-                                alt="Roger HUb Image">
-                        </div>
-                        <h2>The Roger Hub <span>New</span></h2>
-                        <p>The Roger Hub is an immersive web experience showcasing
-                            the tennis-inspired 'On' sneakers, a collaboration born out of
-                            a partnership with the legendary Roger Federer.</p>
-                    </a>
-                </div>
-            </div>
-
-            <h1>MIRANDA</h1>
-
-        </div>
-
-        <div class="page-2">
-
-            <div class="left-page-2">
-                <h1>Interactive <span>Artist!</span></h1>
-                <img src="https://uploads-ssl.webflow.com/5f2429f172d117fcee10e819/605c6ce3bc0c7d1cd4ca847e_avatar-star-p-800.jpeg"
-                    alt="img">
+                <h2>AVRO | KO <span>New</span></h2>
                 <p>
-                    <span>A</span> s a multidisciplinary freelancer,
-                    I'm passionate about creating
-                    iconic digital experiences
-                    through motion, typography, and
-                    creative coding for companies and
-                    agencies around the world.
+                  AvroKO is an award-winning global design firm, established
+                  itself as a global leader in interior architecture for
+                  hospitality, restaurant and bars.
                 </p>
+              </a>
             </div>
-
-            <div class="right-page-2">
-                <img src="https://uploads-ssl.webflow.com/5f2429f172d117fcee10e819/605c62f4c78c4ba46a1268be_avatar-1-p-2000.jpeg"
-                    alt="image">
-
-                <p>DIGITAL ART DIRECTOR
-                    INTERACTIVE DESIGNER
-                    CREATIVE DEVELOPER
-                    BASED IN AMSTERDAM, NL.</p>
+            <div class="page-1-elem-2">
+              <h2>All Work!</h2>
+              <p>Selected highlights from the last few years.</p>
+              <p><a href="#selected-work">Explore the selected work</a></p>
             </div>
-
-        </div>
-
-        <div class="page-3">
-            <h1>WEBSITE</h1>
-            <img src="https://uploads-ssl.webflow.com/5f2429f172d117fcee10e819/60474834660f934090d42877_stamp.png"
-                alt="image">
-        </div>
-
-        <div class="page-4">
-            <div class="page-4-elems">
-                <div class="page-4-elems-left">
-                    <div class="page-4-elems-left-top">
-
-                        <div class="page-4-elem-1">
-                            <h1>UPCOMING NEXT</h1>
-                            <p>Fresh entry - A selected
-                                work from the latest
-                                digital releases.</p>
-                            <p><span>Tip!</span> Click on the image to explore</p>
-                        </div>
-
-                        <div class="page-4-elem-2 zoom-img-effect">
-                            <div class="page-4-elem-2-img">
-                                <img src="https://uploads-ssl.webflow.com/5f9085a4041dd5427c5ac8ae/645b5c79f349770ebcc28ec4_thumbnail-small.webp?"
-                                    alt="image">
-                            </div>
-                            <h1>UNEXPECTED TIME</h1>
-                            <p>Unexpected Time is a classic-furitistic gamification web
-                                experience showcasing the lost history & culture in a world
-                                dominated by the virtual reality.</p>
-                        </div>
-
-                    </div>
-                    <div class="page-4-elems-right-bottom">
-
-                        <div class="page-4-elem-4">
-                            <img src="https://uploads-ssl.webflow.com/5f2429f172d117fcee10e819/605c679f33f67d3dd00b04b4_avatar-3.jpeg"
-                                alt="image">
-                        </div>
-                    </div>
-
+            <div class="page-1-elem-3 zoom-img-effect">
+              <a
+                aria-label="Preview The Roger Hub"
+                data-project=""
+                href="#selected-work"
+              >
+                <div class="project-image page-1-elem-3-img">
+                  <img
+                    alt="The Roger Hub sneaker project"
+                    decoding="async"
+                    fetchpriority="high"
+                    height="406"
+                    loading="eager"
+                    sizes="(max-width: 560px) calc((100vw - 50px) / 2), (max-width: 800px) 45vw, 33vw"
+                    src="assets/images/roger-640.webp"
+                    srcset="
+                      assets/images/roger-320.webp 320w,
+                      assets/images/roger-640.webp 640w,
+                      assets/images/roger-960.webp 960w
+                    "
+                    width="1055"
+                  />
                 </div>
-
-                <div class="page-4-elems-right">
-
-                    <div class="page-4-elem-3">
-                        <p>THINK, CREATE
-                            <span>DEIVER</span>
-                        </p>
-
-                        <p><span>A</span> strong project is created by
-                            deep collaboration. I design,
-                            develop, and deliver websites
-                            that drive results and win awards.</p>
-
-                        <p>Like an artisan, I like to start from raw
-                            matter and give life to an iconic
-                            product that makes your brand stand
-                            out, starting from a Visual Strategy
-                            that guide the client's vision to reality.</p>
-
-                        <div class="oval">
-                            <img src="https://uploads-ssl.webflow.com/5f2429f172d117fcee10e819/61001a3509319b6ae39e156b_arrow-long.svg"
-                                alt="arrow image">
-                            <p class="oval-para">All WORK</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="page-5">
-            <div class="page-5-elems">
-                <div class="page-5-elem-1">
-                    <div class="page-5-elem-1-left">
-                        <p>Site of the Day</p>
-                        <p>Awards</p>
-                    </div>
-                    <div class="page-5-elem-1-right">
-                        <p>9</p>
-                    </div>
-                </div>
-                <div class="page-5-elem-2">
-                    <div class="page-5-elem-2-left">
-                        <p>Site of the Month</p>
-                        <p>Winner</p>
-                    </div>
-                    <div class="page-5-elem-2-right">
-                        <p>1</p>
-                    </div>
-                </div>
-                <div class="page-5-elem-3">
-                    <div class="page-5-elem-3-left">
-                        <p>FWA of the Day</p>
-                        <p>Awards</p>
-                    </div>
-                    <div class="page-5-elem-3-right">
-                        <p>6</p>
-                    </div>
-                </div>
-                <div class="page-5-elem-4">
-                    <div class="page-5-elem-4-left">
-                        <p>Acclaimed</p>
-                        <p>Mentions</p>
-                    </div>
-                    <div class="page-5-elem-4-right">
-                        <p>8</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="page-6">
-            <div class="page-6-elems">
-                <div class="page-6-elem-top">
-                    <div class="page-6-elem-1-top-left">
-                        <img src="https://uploads-ssl.webflow.com/5f2429f172d117fcee10e819/605c70e48081716925e9832a_avatar-hat.jpeg"
-                            alt="image">
-                        <div class="page-6-elem-1-top-left-text">
-                            <h1>THE</h1>
-                            <h1>PIXEL</h1>
-                        </div>
-                    </div>
-                    <div class="page-6-elem-2-top-right">
-                        <img src="https://uploads-ssl.webflow.com/5f2429f172d117fcee10e819/605c6da4f1f8304440ee2e8c_avatar-2-p-1080.jpeg"
-                            alt="image">
-                    </div>
-                </div>
-                <div class="page-6-elem-mid">
-                    <div class="page-6-elem-1-mid-left">
-                        <img src="https://uploads-ssl.webflow.com/5f2429f172d117fcee10e819/605c6fd0f6276ef0c6bacfa4_trophy-p-800.jpeg"
-                            alt="image">
-                        <div class="page-6-elem-2-mid-right">
-                            <h1>PERFECT</h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="page-6-elem-bottom">
-                    <div class="page-6-elem-left-bottom">
-                        <h1>ARTISAN</h1>
-                    </div>
-                    <div class="page-6-elem-right-bottom">
-                        <p>Over the past 5+ years, I've teamed up
-                            with high-profile clients and partners
-                            globally earning mentions & awards from
-                            digital platforms like The FWA,</p>
-                        <p>AWWWARDS</p>
-                        <p>Communication Arts, Site Inspire,
-                            Behance, Codrops and many others.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="page-7">
-
-            <div class="page-7-elems">
-                <div class="page-7-elem-1 zoom-img-effect">
-                    <a href="#">
-                        <div class="page-1-elem-1-img ">
-                            <img src="https://uploads-ssl.webflow.com/5f9085a4041dd5427c5ac8ae/647dc0777b1a5df29f8e5a58_thumbnail-small.webp?"
-                                alt="Avro ko Image">
-                        </div>
-                        <h2>WOW CONCEPT<span>New</span></h2>
-                        <p>WOW Concept is a the world's first concept store based in
-                            Madrid revolutionizing retail with a dynamic & interactive
-                            shopping experience.</p>
-                    </a>
-                </div>
-
-                <div class="page-7-elem-2">
-                    <h2>All Work!</h2>
-                    <p>Handpicked highlights -
-                        spanning the last few
-                        years.</p>
-
-                    <p><span>Tip!</span> Click on the sides to explore</p>
-                </div>
-
-                <div class="page-7-elem-3 zoom-img-effect">
-                    <a href="#">
-
-                        <div class="page-7-elem-3-img">
-                            <img src="https://uploads-ssl.webflow.com/5f9085a4041dd5427c5ac8ae/615d9672cc65f12c9ab25f21_thumbnail-small.jpeg?"
-                                alt="Roger HUb Image">
-                        </div>
-                        <h2>AVRO KO <span>New</span></h2>
-                        <p>AvroKO is an award-winning global design firm, established
-                            itself as a global leader in interior architecture for hospitality,
-                            restaurant and bars.</p>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="page-8">
-            <h1>Let`s create something together <span>EMAIL ME</span></h1>
-            <h1>Let`s create something together <span>EMAIL ME</span></h1>
-            <h1>Let`s create something together <span>EMAIL ME</span></h1>
-        </div>
-
-        <div class="page-9">
-            <div class="page-9-left">
-                <p>MIRANDA
-                    <i class="ri-copyright-line"></i>
+                <h2>The Roger Hub <span>New</span></h2>
+                <p>
+                  The Roger Hub is an immersive web experience showcasing the
+                  tennis-inspired 'On' sneakers, a collaboration born out of a
+                  partnership with the legendary Roger Federer.
                 </p>
-
-                <img src="https://uploads-ssl.webflow.com/5f2429f172d117fcee10e819/60474834660f934090d42877_stamp.png"
-                    alt="legal image">
-
-                <p>Legal</p>
+              </a>
             </div>
-
-            <div class="page-9-right">
-                <a href="https://www.facebook.com/profile.php?id=100029634032345">Facebook</a>
-                <a href="https://www.instagram.com/muhammad_saad965/">Instagram</a>
-                <a href="https://github.com/ScriptWithSaad">GitHub</a>
-                <a href="https://discord.com/channels/@me">Discord</a>
-            </div>
+          </div>
+          <h1 class="masthead">MIRANDA</h1>
         </div>
-
-    </div>
-
-
-
-
-    <!-- locomotive cdn -->
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
-    <!-- Gsap cdn -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
-        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <script src="./javascript/script.js"></script>
-</body>
-
+      </div>
+      <div class="page-2" id="about">
+        <div class="left-page-2">
+          <h2>Interactive <span>Artist!</span></h2>
+          <img
+            alt="Illustrated portrait of Miranda with a star earring"
+            decoding="async"
+            height="929"
+            loading="lazy"
+            sizes="(max-width: 560px) calc(100vw - 36px), (max-width: 800px) 92vw, 60vw"
+            src="assets/images/portrait-star-640.webp"
+            srcset="
+              assets/images/portrait-star-320.webp 320w,
+              assets/images/portrait-star-640.webp 640w,
+              assets/images/portrait-star-800.webp 800w
+            "
+            width="800"
+          />
+          <p>
+            <span class="drop-cap">A</span> s a multidisciplinary freelancer,
+            I'm passionate about creating iconic digital experiences through
+            motion, typography, and creative coding for companies and agencies
+            around the world.
+          </p>
+        </div>
+        <div class="right-page-2">
+          <img
+            alt="Illustrated portrait of Miranda in profile"
+            decoding="async"
+            height="1361"
+            loading="lazy"
+            sizes="(max-width: 560px) calc(100vw - 36px), (max-width: 800px) 92vw, 60vw"
+            src="assets/images/portrait-main-640.webp"
+            srcset="
+              assets/images/portrait-main-320.webp   320w,
+              assets/images/portrait-main-640.webp   640w,
+              assets/images/portrait-main-960.webp   960w,
+              assets/images/portrait-main-1600.webp 1600w
+            "
+            width="2000"
+          />
+          <p>
+            <span>Digital Art Director</span><span>Interactive Designer</span
+            ><span>Creative Developer</span><span>Based in Amsterdam, NL.</span>
+          </p>
+        </div>
+      </div>
+      <div class="page-3">
+        <h2>WEBSITE</h2>
+        <img
+          alt="Miranda postage stamp"
+          decoding="async"
+          height="359"
+          loading="lazy"
+          sizes="(max-width: 560px) calc(100vw - 36px), (max-width: 800px) 92vw, 60vw"
+          src="assets/images/stamp-288.webp"
+          srcset="assets/images/stamp-288.webp 288w"
+          width="288"
+        />
+      </div>
+      <div class="page-4" id="approach">
+        <div class="page-4-elems">
+          <div class="page-4-elems-left">
+            <div class="page-4-elems-left-top">
+              <div class="page-4-elem-1">
+                <h2>UPCOMING NEXT</h2>
+                <p>
+                  Fresh entry - A selected work from the latest digital
+                  releases.
+                </p>
+                <p>Click the artwork to view the project.</p>
+              </div>
+              <div class="page-4-elem-2 zoom-img-effect">
+                <a
+                  aria-label="Preview UNEXPECTED TIME"
+                  data-project=""
+                  href="#selected-work"
+                >
+                  <div class="page-4-elem-2-img project-image">
+                    <img
+                      alt="Unexpected Time digital experience"
+                      decoding="async"
+                      height="406"
+                      loading="lazy"
+                      sizes="(max-width: 560px) calc(100vw - 36px), (max-width: 800px) 92vw, 60vw"
+                      src="assets/images/unexpected-640.webp"
+                      srcset="
+                        assets/images/unexpected-320.webp 320w,
+                        assets/images/unexpected-640.webp 640w,
+                        assets/images/unexpected-960.webp 960w
+                      "
+                      width="1055"
+                    />
+                  </div>
+                  <h2>UNEXPECTED TIME</h2>
+                  <p>
+                    Unexpected Time is a classic-furitistic gamification web
+                    experience showcasing the lost history &amp; culture in a
+                    world dominated by the virtual reality.
+                  </p>
+                </a>
+              </div>
+            </div>
+            <div class="page-4-elems-right-bottom">
+              <div class="page-4-elem-4">
+                <img
+                  alt="Miranda working at a desk"
+                  decoding="async"
+                  height="1013"
+                  loading="lazy"
+                  sizes="(max-width: 560px) calc(100vw - 36px), (max-width: 800px) 92vw, 60vw"
+                  src="assets/images/portrait-wide-640.webp"
+                  srcset="
+                    assets/images/portrait-wide-320.webp   320w,
+                    assets/images/portrait-wide-640.webp   640w,
+                    assets/images/portrait-wide-960.webp   960w,
+                    assets/images/portrait-wide-1468.webp 1468w
+                  "
+                  width="1468"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="page-4-elems-right">
+            <div class="page-4-elem-3">
+              <h2 class="statement">
+                THINK, CREATE
+                <span>DELIVER</span>
+              </h2>
+              <p class="collaboration-copy">
+                <span class="drop-cap">A</span> strong project is created by
+                deep collaboration. I design, develop, and deliver websites that
+                drive results and win awards.
+              </p>
+              <p class="craft-copy">
+                Like an artisan, I like to start from raw matter and give life
+                to an iconic product that makes your brand stand out, starting
+                from a Visual Strategy that guide the client's vision to
+                reality.
+              </p>
+              <a
+                aria-label="Explore all selected work"
+                class="oval"
+                href="#selected-work"
+              >
+                <img
+                  alt=""
+                  decoding="async"
+                  height="32"
+                  src="assets/images/arrow.svg"
+                  width="220"
+                />
+                <p class="oval-para">All WORK</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page-5" id="recognition">
+        <div class="page-5-elems">
+          <div class="page-5-elem-1">
+            <div class="page-5-elem-1-left">
+              <p>Site of the Day</p>
+              <p>Awards</p>
+            </div>
+            <div class="page-5-elem-1-right">
+              <p>9</p>
+            </div>
+          </div>
+          <div class="page-5-elem-2">
+            <div class="page-5-elem-2-left">
+              <p>Site of the Month</p>
+              <p>Winner</p>
+            </div>
+            <div class="page-5-elem-2-right">
+              <p>1</p>
+            </div>
+          </div>
+          <div class="page-5-elem-3">
+            <div class="page-5-elem-3-left">
+              <p>FWA of the Day</p>
+              <p>Awards</p>
+            </div>
+            <div class="page-5-elem-3-right">
+              <p>6</p>
+            </div>
+          </div>
+          <div class="page-5-elem-4">
+            <div class="page-5-elem-4-left">
+              <p>Acclaimed</p>
+              <p>Mentions</p>
+            </div>
+            <div class="page-5-elem-4-right">
+              <p>8</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page-6" id="craft">
+        <div class="page-6-elems">
+          <div class="page-6-elem-top">
+            <div class="page-6-elem-1-top-left">
+              <img
+                alt="Illustrated portrait with a hat"
+                decoding="async"
+                height="1288"
+                loading="lazy"
+                sizes="(max-width: 560px) calc(100vw - 36px), (max-width: 800px) 92vw, 60vw"
+                src="assets/images/portrait-hat-640.webp"
+                srcset="
+                  assets/images/portrait-hat-320.webp 320w,
+                  assets/images/portrait-hat-640.webp 640w,
+                  assets/images/portrait-hat-696.webp 696w
+                "
+                width="696"
+              />
+              <div class="page-6-elem-1-top-left-text">
+                <h2>THE</h2>
+                <h2>PIXEL</h2>
+              </div>
+            </div>
+            <div class="page-6-elem-2-top-right">
+              <img
+                alt="Close-up illustrated side portrait"
+                decoding="async"
+                height="1032"
+                loading="lazy"
+                sizes="(max-width: 560px) calc(100vw - 36px), (max-width: 800px) 92vw, 60vw"
+                src="assets/images/portrait-side-640.webp"
+                srcset="
+                  assets/images/portrait-side-320.webp   320w,
+                  assets/images/portrait-side-640.webp   640w,
+                  assets/images/portrait-side-960.webp   960w,
+                  assets/images/portrait-side-1080.webp 1080w
+                "
+                width="1080"
+              />
+            </div>
+          </div>
+          <div class="page-6-elem-mid">
+            <div class="page-6-elem-1-mid-left">
+              <img
+                alt="Design award trophy"
+                decoding="async"
+                height="724"
+                loading="lazy"
+                sizes="(max-width: 560px) calc(100vw - 36px), (max-width: 800px) 92vw, 60vw"
+                src="assets/images/trophy-640.webp"
+                srcset="
+                  assets/images/trophy-320.webp 320w,
+                  assets/images/trophy-640.webp 640w,
+                  assets/images/trophy-800.webp 800w
+                "
+                width="800"
+              />
+              <div class="page-6-elem-2-mid-right">
+                <h2>PERFECT</h2>
+              </div>
+            </div>
+          </div>
+          <div class="page-6-elem-bottom">
+            <div class="page-6-elem-left-bottom">
+              <h2>ARTISAN</h2>
+            </div>
+            <div class="page-6-elem-right-bottom">
+              <p>
+                Over the past 5+ years, I've teamed up with high-profile clients
+                and partners globally earning mentions &amp; awards from digital
+                platforms like The FWA,
+              </p>
+              <p>AWWWARDS</p>
+              <p>
+                Communication Arts, Site Inspire, Behance, Codrops and many
+                others.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page-7" id="selected-work">
+        <div class="page-7-elems">
+          <div class="page-7-elem-1 zoom-img-effect">
+            <a
+              aria-label="Preview WOW CONCEPT"
+              data-project=""
+              href="#selected-work"
+            >
+              <div class="project-image page-1-elem-1-img">
+                <img
+                  alt="WOW Concept retail project"
+                  decoding="async"
+                  height="406"
+                  loading="lazy"
+                  sizes="(max-width: 560px) calc((100vw - 50px) / 2), (max-width: 800px) 45vw, 33vw"
+                  src="assets/images/wow-640.webp"
+                  srcset="
+                    assets/images/wow-320.webp 320w,
+                    assets/images/wow-640.webp 640w,
+                    assets/images/wow-960.webp 960w
+                  "
+                  width="1055"
+                />
+              </div>
+              <h2>WOW CONCEPT<span>New</span></h2>
+              <p>
+                WOW Concept is the world's first concept store based in Madrid
+                revolutionizing retail with a dynamic &amp; interactive shopping
+                experience.
+              </p>
+            </a>
+          </div>
+          <div class="page-7-elem-2">
+            <h2>All Work!</h2>
+            <p>Selected highlights from the last few years.</p>
+            <p><a href="#selected-work">Explore the selected work</a></p>
+          </div>
+          <div class="page-7-elem-3 zoom-img-effect">
+            <a
+              aria-label="Preview AVRO KO"
+              data-project=""
+              href="#selected-work"
+            >
+              <div class="project-image page-7-elem-3-img">
+                <img
+                  alt="AvroKO interior design project"
+                  decoding="async"
+                  height="406"
+                  loading="lazy"
+                  sizes="(max-width: 560px) calc((100vw - 50px) / 2), (max-width: 800px) 45vw, 33vw"
+                  src="assets/images/avroko-640.webp"
+                  srcset="
+                    assets/images/avroko-320.webp 320w,
+                    assets/images/avroko-640.webp 640w,
+                    assets/images/avroko-960.webp 960w
+                  "
+                  width="1055"
+                />
+              </div>
+              <h2>AVRO KO <span>New</span></h2>
+              <p>
+                AvroKO is an award-winning global design firm, established
+                itself as a global leader in interior architecture for
+                hospitality, restaurant and bars.
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="page-8">
+        <div aria-hidden="true" class="contact-track">
+          <p>Let’s create something together <span>CONTACT</span></p>
+          <p>Let’s create something together <span>CONTACT</span></p>
+        </div>
+        <a
+          aria-label="Get in touch — find social contact links"
+          class="contact-link"
+          href="#contact"
+        ></a>
+        <div class="ticker-controls">
+          <button
+            aria-label="Pause moving contact strip"
+            class="ticker-pause"
+            type="button"
+          >
+            Pause motion
+          </button>
+        </div>
+      </div>
+      <footer class="page-9" id="contact">
+        <div class="page-9-left">
+          <p>MIRANDA ©</p>
+          <img
+            alt="Miranda postage stamp"
+            decoding="async"
+            height="359"
+            loading="lazy"
+            sizes="(max-width: 560px) calc(100vw - 36px), (max-width: 800px) 92vw, 60vw"
+            src="assets/images/stamp-288.webp"
+            srcset="assets/images/stamp-288.webp 288w"
+            width="288"
+          />
+          <p>Paper Portfolio</p>
+        </div>
+        <div class="page-9-right">
+          <a
+            href="https://www.facebook.com/ScriptingwithSaad/"
+            rel="noopener noreferrer"
+            target="_blank"
+            >Facebook</a
+          ><a
+            href="https://www.instagram.com/scriptingwithsaad"
+            rel="noopener noreferrer"
+            target="_blank"
+            >Instagram</a
+          ><a
+            href="https://github.com/ScriptingWithSaad"
+            rel="noopener noreferrer"
+            target="_blank"
+            >GitHub</a
+          >
+        </div>
+      </footer>
+      <p class="recreation-credit">
+        Educational recreation by ScriptingWithSaad. Original design and
+        artwork:
+        <a
+          href="https://www.niccolomiranda.com/"
+          rel="noopener noreferrer"
+          target="_blank"
+          >Niccolò Miranda</a
+        >.
+      </p>
+    </main>
+    <dialog
+      aria-labelledby="preview-title"
+      class="preview-dialog"
+      id="project-preview"
+    >
+      <header>
+        <h2 id="preview-title">Project preview</h2>
+        <button
+          aria-label="Close project preview"
+          class="preview-close"
+          type="button"
+        >
+          ×
+        </button>
+      </header>
+      <img alt="" height="406" id="preview-image" width="1055" />
+      <p id="preview-description"></p>
+    </dialog>
+  </body>
 </html>

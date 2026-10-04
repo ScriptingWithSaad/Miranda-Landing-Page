@@ -1,16 +1,16 @@
 @font-face {
   font-family: Canopee;
-  src: url("../assets/fonts/Canopee.ttf") format("truetype");
+  src: url("../fonts/Canopee.ttf") format("truetype");
   font-display: swap;
 }
 @font-face {
   font-family: Domaine;
-  src: url("../assets/fonts/Domaine.ttf") format("truetype");
+  src: url("../fonts/Domaine.ttf") format("truetype");
   font-display: swap;
 }
 @font-face {
   font-family: Editorial;
-  src: url("../assets/fonts/EditorialNew-Light.ttf") format("truetype");
+  src: url("../fonts/EditorialNew-Light.ttf") format("truetype");
   font-display: swap;
 }
 :root {

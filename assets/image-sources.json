@@ -1,0 +1,257 @@
+{
+  "header": {
+    "source": "https://uploads-ssl.webflow.com/5f2429f172d117fcee10e819/5f7f87c8b81a6e7a214312f0_header.svg",
+    "file": "assets/images/header.svg"
+  },
+  "arrow": {
+    "source": "https://uploads-ssl.webflow.com/5f2429f172d117fcee10e819/61001a3509319b6ae39e156b_arrow-long.svg",
+    "file": "assets/images/arrow.svg"
+  },
+  "avroko": {
+    "source": "https://uploads-ssl.webflow.com/5f9085a4041dd5427c5ac8ae/615d9672cc65f12c9ab25f21_thumbnail-small.jpeg",
+    "width": 1055,
+    "height": 406,
+    "files": [
+      {
+        "file": "assets/images/avroko-320.webp",
+        "width": 320,
+        "height": 123
+      },
+      {
+        "file": "assets/images/avroko-640.webp",
+        "width": 640,
+        "height": 246
+      },
+      {
+        "file": "assets/images/avroko-960.webp",
+        "width": 960,
+        "height": 369
+      }
+    ]
+  },
+  "roger": {
+    "source": "https://uploads-ssl.webflow.com/5f9085a4041dd5427c5ac8ae/645b5439577bd35377de8c43_thumbnail-small.webp",
+    "width": 1055,
+    "height": 406,
+    "files": [
+      {
+        "file": "assets/images/roger-320.webp",
+        "width": 320,
+        "height": 123
+      },
+      {
+        "file": "assets/images/roger-640.webp",
+        "width": 640,
+        "height": 246
+      },
+      {
+        "file": "assets/images/roger-960.webp",
+        "width": 960,
+        "height": 369
+      }
+    ]
+  },
+  "portrait-star": {
+    "source": "https://uploads-ssl.webflow.com/5f2429f172d117fcee10e819/605c6ce3bc0c7d1cd4ca847e_avatar-star-p-800.jpeg",
+    "width": 800,
+    "height": 929,
+    "files": [
+      {
+        "file": "assets/images/portrait-star-320.webp",
+        "width": 320,
+        "height": 372
+      },
+      {
+        "file": "assets/images/portrait-star-640.webp",
+        "width": 640,
+        "height": 743
+      },
+      {
+        "file": "assets/images/portrait-star-800.webp",
+        "width": 800,
+        "height": 929
+      }
+    ]
+  },
+  "portrait-main": {
+    "source": "https://uploads-ssl.webflow.com/5f2429f172d117fcee10e819/605c62f4c78c4ba46a1268be_avatar-1-p-2000.jpeg",
+    "width": 2000,
+    "height": 1361,
+    "files": [
+      {
+        "file": "assets/images/portrait-main-320.webp",
+        "width": 320,
+        "height": 218
+      },
+      {
+        "file": "assets/images/portrait-main-640.webp",
+        "width": 640,
+        "height": 436
+      },
+      {
+        "file": "assets/images/portrait-main-960.webp",
+        "width": 960,
+        "height": 653
+      },
+      {
+        "file": "assets/images/portrait-main-1600.webp",
+        "width": 1600,
+        "height": 1089
+      }
+    ]
+  },
+  "stamp": {
+    "source": "https://uploads-ssl.webflow.com/5f2429f172d117fcee10e819/60474834660f934090d42877_stamp.png",
+    "width": 288,
+    "height": 359,
+    "files": [
+      {
+        "file": "assets/images/stamp-288.webp",
+        "width": 288,
+        "height": 359
+      }
+    ]
+  },
+  "unexpected": {
+    "source": "https://uploads-ssl.webflow.com/5f9085a4041dd5427c5ac8ae/645b5c79f349770ebcc28ec4_thumbnail-small.webp",
+    "width": 1055,
+    "height": 406,
+    "files": [
+      {
+        "file": "assets/images/unexpected-320.webp",
+        "width": 320,
+        "height": 123
+      },
+      {
+        "file": "assets/images/unexpected-640.webp",
+        "width": 640,
+        "height": 246
+      },
+      {
+        "file": "assets/images/unexpected-960.webp",
+        "width": 960,
+        "height": 369
+      }
+    ]
+  },
+  "portrait-wide": {
+    "source": "https://uploads-ssl.webflow.com/5f2429f172d117fcee10e819/605c679f33f67d3dd00b04b4_avatar-3.jpeg",
+    "width": 1468,
+    "height": 1013,
+    "files": [
+      {
+        "file": "assets/images/portrait-wide-320.webp",
+        "width": 320,
+        "height": 221
+      },
+      {
+        "file": "assets/images/portrait-wide-640.webp",
+        "width": 640,
+        "height": 442
+      },
+      {
+        "file": "assets/images/portrait-wide-960.webp",
+        "width": 960,
+        "height": 662
+      },
+      {
+        "file": "assets/images/portrait-wide-1468.webp",
+        "width": 1468,
+        "height": 1013
+      }
+    ]
+  },
+  "portrait-hat": {
+    "source": "https://uploads-ssl.webflow.com/5f2429f172d117fcee10e819/605c70e48081716925e9832a_avatar-hat.jpeg",
+    "width": 696,
+    "height": 1288,
+    "files": [
+      {
+        "file": "assets/images/portrait-hat-320.webp",
+        "width": 320,
+        "height": 592
+      },
+      {
+        "file": "assets/images/portrait-hat-640.webp",
+        "width": 640,
+        "height": 1184
+      },
+      {
+        "file": "assets/images/portrait-hat-696.webp",
+        "width": 696,
+        "height": 1288
+      }
+    ]
+  },
+  "portrait-side": {
+    "source": "https://uploads-ssl.webflow.com/5f2429f172d117fcee10e819/605c6da4f1f8304440ee2e8c_avatar-2-p-1080.jpeg",
+    "width": 1080,
+    "height": 1032,
+    "files": [
+      {
+        "file": "assets/images/portrait-side-320.webp",
+        "width": 320,
+        "height": 306
+      },
+      {
+        "file": "assets/images/portrait-side-640.webp",
+        "width": 640,
+        "height": 612
+      },
+      {
+        "file": "assets/images/portrait-side-960.webp",
+        "width": 960,
+        "height": 917
+      },
+      {
+        "file": "assets/images/portrait-side-1080.webp",
+        "width": 1080,
+        "height": 1032
+      }
+    ]
+  },
+  "trophy": {
+    "source": "https://uploads-ssl.webflow.com/5f2429f172d117fcee10e819/605c6fd0f6276ef0c6bacfa4_trophy-p-800.jpeg",
+    "width": 800,
+    "height": 724,
+    "files": [
+      {
+        "file": "assets/images/trophy-320.webp",
+        "width": 320,
+        "height": 290
+      },
+      {
+        "file": "assets/images/trophy-640.webp",
+        "width": 640,
+        "height": 579
+      },
+      {
+        "file": "assets/images/trophy-800.webp",
+        "width": 800,
+        "height": 724
+      }
+    ]
+  },
+  "wow": {
+    "source": "https://uploads-ssl.webflow.com/5f9085a4041dd5427c5ac8ae/647dc0777b1a5df29f8e5a58_thumbnail-small.webp",
+    "width": 1055,
+    "height": 406,
+    "files": [
+      {
+        "file": "assets/images/wow-320.webp",
+        "width": 320,
+        "height": 123
+      },
+      {
+        "file": "assets/images/wow-640.webp",
+        "width": 640,
+        "height": 246
+      },
+      {
+        "file": "assets/images/wow-960.webp",
+        "width": 960,
+        "height": 369
+      }
+    ]
+  }
+}
